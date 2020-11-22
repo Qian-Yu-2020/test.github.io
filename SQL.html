@@ -22,14 +22,12 @@
 							<ul>
 								<li>
 										<br />
-										<br />
 									</a></li>
-								<li><a href="#top" id="about-link">Subject</span></a></li>
-								<li><a href="#aim1" id="portfolio-link">Which time period customers are most likely to make transactions?</span></a></li>
-								<li><a href="#code1" id="about-link">Where did the new customers or returning customers act differently?
-</span></a></li>
-								<li><a href="#aim2" id="portfolio-link">Introduction</span></a></li>
-								<li><a href="#code2" id="about-link">When is the peak time</span></a></li>
+								<li><a href="#top" id="about-link">Project Introduction</span></a></li>
+								<li><a href="#aim1" id="portfolio-link">Database Design </span></a></li>
+								<li><a href="#ss2" id="portfolio-link">Sale Summary</span></a></li>
+								<li><a href="#cb2" id="about-link"> Buying Behavior</span></a></li>
+								<li><a href="#pp2" id="about-link">Product Performance</span></a></li>
 								<li><a href="#Conclusion" id="contact-link">Conclusion</span></a></li>
 							</ul>
 						</nav>
@@ -54,54 +52,72 @@
 						<div class="container">
 
 							<header>
-								<h2 class="alt">Hi! I'm <strong>Prologue</strong>, a <a href="http://html5up.net/license">free</a> responsive<br />
-								site template designed by <a href="http://html5up.net">HTML5 UP</a>.</h2>
-								<p>Ligula scelerisque justo sem accumsan diam quis<br />
-								vitae natoque dictum sollicitudin elementum.</p>
+								<h2 > <a href="#"></a></h2>
+								<h3>Cumberland Farms is
+									a regional chain of convenience stores</h3>
+								<h2>
+									This SQL project is to present my query skills for both
+									<strong>retail and ecommerce business</strong> <br />
+									 <br />
+								</h2>
 							</header>
-
+								<h3> The main purpose of the project is to present answers and views
+									to better understand customer behavior and
+									analysis sale pattern to increase revenue.
+								</h3>
+							</header>
 						</div>
 					</section>
 
 				<!-- Aim -->
 					<section id="aim1" class="two">
 						<div class="container">
-								<h3>Aim of the Project</h3>
+							<h3>Enhanced entity-relationship (EER) modeling</h3>
 
-							</header>
-								<p>Enhanced entity-relationship (EER) modeling for conceptual data modeling<br />
-EER conversion and normalization for the logical database design<br />
-Structured Query Language (SQL) for database definition and manipulation<br />
-								</p>
-							<p>data from <a href="#">link<br />
-								</p>
-							<a href="#" class="image featured"><img src="images/EER Model Final Version.png" alt="" /></a>
+							Draw database model for conceptual data modeling
+							to give overview and conversion to the SQL
+							for database definition and manipulation<br />
+							</h3>
+							<br /><a class="image featured"><img src="images/EER Model Final Version.png" alt="" /></a>
 						</div>
 					</section>
 
 
-				<!-- Code -->
-					<section id="code1" class="three">
+
+				<!-- Aim -->
+					<section id="ss2" class="two">
 						<div class="container">
-									<header>
-										<h2>Create a view that shows the number of online and in person orders
-in two separate columns with appropriate headings
-</h2>
-										<p>CREATE OR REPLACE VIEW v1 AS
-SELECT COUNT(CASE WHEN ordertype = 'O' THEN 1
-                  ELSE NULL
-             END) AS ONLINE_ORDER
-       ,COUNT(CASE WHEN ordertype = 'S' THEN 1
-                   ELSE NULL
-              END) AS IN_PERSON_ORDER
-    FROM t_order;
+							<h2>Sale Performance Summary</h2>
+							<br />
+							<h3><strong>The Total quantity in each category have been ordered</strong> <br />
+					on each day of the week
+ 					</h3>
+							<a class="image featured"><img src="images/ss2.png" alt="" /></a>
 
-SELECT * FROM v1;
-</p>
-									</header>
-									<p>Develop automated Tableau dashboards for customer engagement KPIs, communicate with cross-functional
-teams to define and measure metrics, find root causes and reduce shopping cart abandonment rate by 25%</p>
+							<h3>Present the number of unique orders and unique customers<br />
+								with invoices > $20 for each month<br />
+							</h3>
+							<a class="image featured"><img src="images/ss3.png" alt="" /></a>
 
+						</div>
+					</section>
+				<!-- Code -->
+					<section id="cb2" class="three">
+						<div class="container">
+							<h2>Consumer Buying Behaviors</h2>
+							<br />
+										<h3>Four typical types of behaviors when making a purchase include <br />
+											complex buying <br />
+											habitual buying <br />
+											dissonance-reducing buying <br />
+											variety-seeking buying <br />
+										</h3>
+							<p> <br />Complex Buying Complex behavior is encountered when consumers are buying an expensive, <br />
+								infrequently bought product. They are highly involved in the purchase process and consumers’ <br />
+								research before committing to invest.
+										</p>
+
+						<a class="image featured"><img src="images/cb1.png" alt="" /></a>
 
 						</div>
 					</section>
@@ -110,34 +126,33 @@ teams to define and measure metrics, find root causes and reduce shopping cart a
 				<!-- Aim -->
 					<section id="aim2" class="two">
 						<div class="container">
-								<h3>Create a view to shows <br />
-									at least two cities must have multiple orders </h3>
+								<h3>5 Essential Steps in the Consumer Buying Process </h3>
 
-							</header>
-								<p>CREATE VIEW v2 AS <br />
-SELECT t_order.orderid, orderdate, t_order.storeid, storecity <br />
-FROM t_order, t_store <br />
-WHERE t_order.storeid = t_store.storeid <br />
-ORDER BY orderid, storecity<br />
-									;<br />
+						<a class="image featured"><img src="images/cb3.png" alt="" /></a>
+
 
 SELECT * FROM v2;</p><br />
 						</div>
 					</section>
 
 				<!-- Code -->
-					<section id="code2" class="three">
+					<section id="pp2" class="three">
 						<div class="container">
 
 									<header>
-										<h2>Tableau</h2>
-										<p>Tableau dashboards for customer engagement KPIs</p>
+										<h2>Product Performance with specific requirements</h2>
 									</header>
-									<p>Develop automated Tableau dashboards for customer engagement KPIs, communicate with cross-functional
-teams to define and measure metrics, find root causes and reduce shopping cart abandonment rate by 25%</p>
+									<h3>The products were only sold at 4th quarter 2020             </h3>
+
+						<a class="image featured"><img src="images/pp1.png" alt="" /></a>
 
 
-						</div>
+							<h3>The products were only sold at 4th quarter 2020             </h3>
+
+							<a class="image featured"><img src="images/pp2.png" alt="" /></a>
+
+
+
 					</section>
 
 				<!-- Conclusion -->
